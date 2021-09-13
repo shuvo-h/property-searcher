@@ -10,6 +10,8 @@ loadProducts();
 // show all product in UI 
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
+  // clean the product container 
+  document.getElementById("all-products").innerHTML = "";
   // create card for each product and add information
   for (const product of allProducts) {
     const image = product.image;
