@@ -2,6 +2,8 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+
+/* search input and search button style  */
 .search-field {
   border: none;
   border-radius: 50px;
@@ -38,31 +40,67 @@ body {
 .search-button:active {
   background-color: blue;
 }
+/* container style for all products */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
   text-align: center;
   width: 100%;
   margin: auto;
   align-items: center;
   justify-content: center;
+  padding: 5px 0px 10px 50px;
 }
+
+/* style singe product card  */
 .single-product {
   padding: 10px;
   transition: 0.6s;
+  height: 450px;
+  width: 400px;
+  border: 1px solid;
+  border-radius: 10px;
+  position: relative;
+  background-color: rgb(161, 216, 228);
+  box-shadow: 0 0 10px 10px inset rgb(133, 197, 197);
 }
 .single-product:hover {
-  box-shadow: 4px 4px 7px gray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
   border: 1px solid cyan;
+  background-color: rgb(105, 176, 220);
+}
+.img{
+  background-color: white;
 }
 .product-image {
   width: 150px;
   height: 150px;
 }
+.product-details{
+  display: inline-block;
+}
+.product-details h3{
+  font-weight: 700;
+}
+.product-details p{
+  font-size: 20px;
+}
+.product-price{
+  margin-top: 5px;
+}
+.buttons{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  margin-left: 100px;
+}
+
+/* style to cart  */
 .cart {
   width: 350px;
-  /* border: 1px solid green; */
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
@@ -86,13 +124,15 @@ body {
   content: "\f005 \f005 \f005 \f005 \f005 ";
   font-weight: 900;
   font-family: 'Font Awesome 5 Free';
-  color: lightgray;
+  color: rgb(118, 112, 112);
+  font-size: 15px;
 }
 .stars-inner::before{
+  font-size: 15px;
   content: "\f005 \f005 \f005 \f005 \f005 ";
   font-weight: 900;
   font-family: 'Font Awesome 5 Free';
-  color: rgb(223, 211, 42);
+  color: yellow;
 }
 .stars-inner{
   position: absolute;
@@ -103,28 +143,23 @@ body {
   white-space: nowrap;
 }
 
+/* style to make responsive  */
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .cart {
-    width: 300px;
-    /* border: 1px solid green; */
-    padding: 10px;
-    box-shadow: 10px 10px 20px gray;
-    border-radius: 5px;
-    margin-right: 30px;
-    position: fixed;
-  }
+  
   .cart-main {
     padding-right: 10px;
   }
 }
+
 @media only screen and (max-width: 468px) {
   #all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
 
