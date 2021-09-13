@@ -19,7 +19,7 @@ body {
   width: 281px;
   border-radius: 10px;
   margin: auto;
-  margin-top: 50px;
+  margin: 50px auto;
   border-right: none;
   display: flex;
   justify-content: space-between;
@@ -56,24 +56,34 @@ body {
 
 /* style singe product card  */
 .single-product {
-  padding: 10px;
-  transition: 0.6s;
+  padding: 25px 15px;
+  transition: 0.3s;
   height: 450px;
   width: 400px;
-  border: 1px solid;
-  border-radius: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
   position: relative;
-  background-color: rgb(161, 216, 228);
-  box-shadow: 0 0 10px 10px inset rgb(133, 197, 197);
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+}
+.single-product::after {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ededed;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  clip-path: polygon(100% 80%, 0% 100%, 100% 100%);
+  transition: .5s;
 }
 .single-product:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
-  border: 1px solid cyan;
-  background-color: rgb(105, 176, 220);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .4);
 }
-.img{
-  background-color: white;
+.single-product:hover::after {
+  clip-path: polygon(100% 65%, 0% 100%, 100% 100%);
 }
 .product-image {
   width: 150px;
@@ -83,7 +93,7 @@ body {
   display: inline-block;
 }
 .product-details h3{
-  font-weight: 700;
+  font-weight: 600;
 }
 .product-details p{
   font-size: 20px;
@@ -93,11 +103,15 @@ body {
 }
 .buttons{
   position: absolute;
-  bottom: 0;
-  margin-bottom: 10px;
-  margin-left: 100px;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
 }
-
+.buttons button {
+  text-transform: capitalize;
+  margin: 0 5px;
+}
 /* style to cart  */
 .cart {
   width: 350px;
@@ -132,7 +146,7 @@ body {
   content: "\f005 \f005 \f005 \f005 \f005 ";
   font-weight: 900;
   font-family: 'Font Awesome 5 Free';
-  color: yellow;
+  color: rgb(216, 216, 48);
 }
 .stars-inner{
   position: absolute;
