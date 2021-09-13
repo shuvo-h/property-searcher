@@ -15,20 +15,32 @@ body {
 .search-box {
   border: 1px solid rgb(3, 118, 211);
   width: 281px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: auto;
   margin-top: 50px;
   border-right: none;
+  display: flex;
+  justify-content: space-between;
 }
 .search-button {
-  padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 20px;
+  padding: 4px 8px;
+  border-end-end-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgb(73, 68, 174);
+  color: white;
+  border-color: rgb(94, 94, 106);
+}
+.search-button:hover {
+  background-color: rgb(49, 49, 240);
+}
+.search-button:active {
+  background-color: blue;
 }
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
   text-align: center;
   width: 100%;
   margin: auto;
@@ -60,6 +72,37 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+
+
+/* style for rating stars */
+.rating{
+  display: inline-block;
+}
+.stars-outer{
+  display: inline-block;
+  position: relative;
+}
+.stars-outer::before{
+  content: "\f005 \f005 \f005 \f005 \f005 ";
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+  color: lightgray;
+}
+.stars-inner::before{
+  content: "\f005 \f005 \f005 \f005 \f005 ";
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+  color: rgb(223, 211, 42);
+}
+.stars-inner{
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+}
+
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
@@ -84,3 +127,4 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
