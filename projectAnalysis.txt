@@ -1,0 +1,6 @@
+Project Title: Property Searcher
+
+section:
+Authentication
+Dashboard
+Public Routes
