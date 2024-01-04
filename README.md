@@ -1,1 +1,1 @@
-### A website to learn graphql and React
+### A website to deal with property advertise

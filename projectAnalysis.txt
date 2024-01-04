@@ -1,6 +1,27 @@
 Project Title: Property Searcher
 
 section:
-Authentication
-Dashboard
-Public Routes
+Authentication:
+- registration with email and password
+- email must be verified before access the account
+- 
+
+
+Admin Dashboard: 
+ : can suspend a user's account
+ : can postpon any advertise
+ : a graph to see number of advertise per month/year with amount
+ : 
+
+
+Super_Admin Dashboard: 
+ : can create a new admin 
+
+Public Pages:
+ : loggedin user can post a Advertise 
+ : Feature to property search and display publicly
+ : QR code for each property and scanning that will open google map at that location
+ : Advertise print option so that land owner can print it for seal in road-side/bill-board
+ : should have a unique username and each property advertise will be extend of the username. eg, my username="skysellinginc", and each advertise id will be   "skysellinginc-randomTextgivenByUser"
+ : Normal Guest can place BID on the advertise for buying the property. During posting the AD, the user will have the option to coose if guest can Bid or not.
+ : 
