@@ -1,0 +1,22 @@
+user:
+ - email
+ - username
+ - password
+ - verified
+ - photo
+
+property:
+ - title
+ - category: land,flat,shop,office
+ - location coOrdinate
+ - location address
+ - base price 
+ - images_urls 
+ - description 
+ - status: sold, open_for_bid, accept_bid_to_process_for_sold
+ 
+
+bid on property: 
+ - property_id
+ - bidder_user_id 
+ - price 
