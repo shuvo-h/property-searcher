@@ -1,0 +1,4 @@
+Central Auth System:
+actually I want not to send the token to client. I will kep it in server with the requester IP address and send a random session id of the token when user will send back the session_id I will check the token and requester IP address from server. so it will be more secure. But here I want to change the random id within few minutes and the previous id will be invalid so the frontend react should update the new token id. I'll verify if the 
+
+- if login request come from a new IP address, then send a device verification email before give the access token to that device. 
