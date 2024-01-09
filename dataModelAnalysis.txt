@@ -4,6 +4,7 @@ user:
  - password
  - verified
  - photo
+ -type: buyer and user 
 
 property:
  - title
@@ -20,3 +21,5 @@ bid on property:
  - property_id
  - bidder_user_id 
  - price 
+ -reating :
+ -comment :
