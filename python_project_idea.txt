@@ -1,0 +1,18 @@
+develope a project calculator application for domestic investment
+
+
+user can create a project:
+	- estimated budget
+	- project duration
+	- expected profit
+	- description
+	- involved users with role
+	- Available budget of this project
+
+after project run:
+	- invest amount
+	- on which date
+	- invest for which purpose
+	- which user invested
+
+	
